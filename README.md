@@ -50,6 +50,30 @@ React es más recomendable para proyectos grandes y equipos que ya dominen esta 
 
 ### React Native
 - Implementar `React.memo` y `FlatList` en lugar de `ScrollView`
-
 ## 5 Despliegues
 
+### Play Store
+- Firmar la aplicación (keystore).
+- Generar un archivo `.aab` (Android App Bundle) para subir a la Play Store.
+- Usar la consola de Google Play para subir el archivo `.aab`.
+- Completar la información requerida (logos, permisos y privacidad, etc).
+
+### App Store
+- Generar un archivo `.ipa` para subir a la App Store.
+- Configurar el archivo `ios/Runner.xcodeproj` con los certificados y perfiles de aprovisionamiento.
+- Usar Xcode para archivar y subir la aplicación a App Store Connect.
+- Completar la información de la aplicación en App Store Connect y enviarla para revisión.
+
+### Firebase Hosting
+- Instalar Firebase CLI e iniciar sesión
+- Inicializar proyecto Firebase (`firebase init`)
+- Construir el proyecto
+- Desplegar con `firebase deploy`
+
+### AWS Amplify
+- Instalar y configurar Amplify CLI
+- Inicializar proyecto Amplify
+- Elegir tipo de hosting:
+  - Amplify Console (con CI/CD)
+  - S3 y CloudFront (manual)
+- Desplegar con `amplify publish`
